@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKED BY REDJESTER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Courier New", monospace;
+            text-align: center;
+            position: relative;
+            font-size: 18px;
+            text-shadow: 0 0 15px red, 0 0 30px red, 0 0 45px red; /* Glowing text effect */
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        /* Heartbeat effect: makes the screen scale and shrink */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.05);
+            }
+            50% {
+                transform: scale(1);
+            }
+            75% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-family: Iceland, sans-serif;
+            color: white;
+            text-shadow: 0 0 15px #FF0099, 0 0 25px red;
+            font-size: 48px;
+            margin-top: 50px;
+        }
+
+        .subheading {
+            font-size: 24px;
+            color: red;
+            margin-top: 20px;
+        }
+
+        .marquee-text {
+            font-size: 20px;
+            color: gold;
+            text-shadow: 0 0 20px gold;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .scrolling-code {
+            font-size: 20px;
+            color: lightgray;
+            margin-top: 30px;
+            text-align: left;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: pre;
+            animation: scrollCode 8s linear infinite;
+        }
+
+        /* Code scrolling animation */
+        @keyframes scrollCode {
+            0% {
+                top: 100px;
+            }
+            100% {
+                top: 100vh;
+            }
+        }
+
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .warning {
+            font-size: 28px;
+            color: maroon;
+            font-weight: bold;
+            animation: blink 1s step-start infinite;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes blink {
+            50% {
+                visibility: hidden;
+            }
+        }
+
+        .random-text {
+            font-size: 30px;
+            color: red;
+            animation: randomText 5s linear infinite;
+            position: absolute;
+            white-space: nowrap;
+        }
+
+        @keyframes randomText {
+            0% { left: -200px; opacity: 0; }
+            50% { left: 50%; opacity: 1; }
+            100% { left: 100%; opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>[ HACKED BY REDLOCK AGENCY ]</h1>
+    <div class="subheading">RLA WAS HERE</div>
+    
+    <marquee behavior="scroll" direction="left">
+        <span class="marquee-text">-=| DEFACED BY REDLOCK AGENCY |=-</span>
+    </marquee>
+    
+    <div class="scrolling-code">
+        <div>ACCESS GRANTED</div>
+        <div>WARNING: SYSTEM BREACH DETECTED</div>
+        <div>RUNNING FULL SYSTEM SCAN...</div>
+        <div>ERROR: UNSOLICITED ACCESS ATTEMPT</div>
+        <div>ACTIVATE COUNTERMEASURES</div>
+        <div>RESTARTING SYSTEM...</div>
+    </div>
+
+    <!-- Random Warning Text -->
+    <div class="warning">WARNING: SYSTEM HACKED!</div>
+
+    <!-- Random Text Elements to make things more dramatic -->
+    <div class="random-text" style="top: 150px;">ACCESS DENIED. RESTRICTED AREA</div>
+    <div class="random-text" style="top: 250px;">YOU'RE BEING WATCHED</div>
+    <div class="random-text" style="top: 350px;">INTRUSION DETECTED. COUNTERMEASURES ACTIVATED</div>
+    
+    <!-- Particle.js container -->
+    <div id="particles-js"></div>
+
+    <!-- Load particles.js script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Randomly generate hacker-themed colors
+        function getRandomColor() {
+            const colors = ['#FF0000', '#8B0000', '#FFD700', '#D3D3D3', '#800000', '#FF6347'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        // Random shape for particles
+        function getRandomShape() {
+            const shapes = ['circle', 'polygon', 'triangle', 'edge'];
+            return shapes[Math.floor(Math.random() * shapes.length)];
+        }
+
+        // Particle.js configuration with random effects
+        const particleConfig = {
+            particles: {
+                number: {
+                    value: 500,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: getRandomColor()  // Random color for particles
+                },
+                shape: {
+                    type: getRandomShape(),
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 6
+                    }
+                },
+                opacity: {
+                    value: 0.8,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 5,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 10,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#FF6347', // Gold-red particles
+                    opacity: 0.6,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'bottom',  // Falling effect
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'window',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    }
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 100,
+                        duration: 0.2
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        };
+
+        // Initialize particles.js with random config
+        particlesJS('particles-js', particleConfig);
+    </script>
+</body>
+</html>
